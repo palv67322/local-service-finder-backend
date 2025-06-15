@@ -17,8 +17,8 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
   .catch(err => console.error('MongoDB connection error:', err));
 
 const razorpay = new Razorpay({
-  key_id: process.env.RAZORPAY_KEY_ID,
-  key_secret: process.env.RAZORPAY_KEY_SECRET
+  key_id: process.env.rzp_test_x1BNfcKz3XtHjz,
+  key_secret: process.env.ZVCPvAhP8A1pxbVlB3OYHRkv
 });
 
 const transporter = nodemailer.createTransport({
